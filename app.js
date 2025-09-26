@@ -3,8 +3,8 @@
 // Global variables
 let currentUser = null;
 let users = [
-  { email: 'student@test.com', password: 'password', role: 'student', name: 'John Student' },
-  { email: 'tutor@test.com', password: 'password', role: 'tutor', name: 'Jane Tutor' }
+  { email: 'shubhamkulkarni2317@gmail.com', password: 'ssk23', role: 'student', name: 'Shubham Kulkarni' },
+  { email: 'srdeshmukh@gmail.com', password: 'srd@123', role: 'tutor', name: 'Dr.S R.Deshmukh'}
 ];
 
 // Modal functions
@@ -52,7 +52,7 @@ function login() {
       window.location.href = 'tutor.html';
     }
   } else {
-    alert('Invalid credentials. Try:\nStudent: student@test.com / password\nTutor: tutor@test.com / password');
+    alert('Invalid credentials. Try again.');
   }
 }
 
@@ -282,7 +282,7 @@ function enhancedLogin() {
         }
       }, 1500);
     } else {
-      showNotification('Invalid credentials. Try: student@test.com or tutor@test.com with password "password"', 'error');
+      showNotification('Invalid credentials. Try again.', 'error');
     }
   }, 1000);
 }
